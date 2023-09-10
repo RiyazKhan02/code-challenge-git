@@ -41,7 +41,6 @@ public class GitDataService {
         var params = new HashMap<>(Collections.singletonMap(CURRENT_DATE, getCurrentDate()));
         params.put(SORT_TYPE,"stars");
         params.put(ORDER,"desc");
-        List<GitRepoDetails> response = new ArrayList<GitRepoDetails>();
         var startTime =System.currentTimeMillis();
         log.info("Invoking GIT search repositories API");
         var gitDataResponse =
